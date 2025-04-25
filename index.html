@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Currency</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <img class="logo" src="./assets/svg/logo.svg" alt="" />
+
+          <nav>
+            <ul>
+              <li><a href="#">БАНК</a></li>
+              <li><a href="#">БИЗНЕС</a></li>
+              <li><a href="#">ИНВЕСТИЦИИ</a></li>
+              <li><a href="#">СТРАХОВАНИЕ</a></li>
+              <li><a href="#">МОБАЙЛ</a></li>
+              <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+              <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+            </ul>
+          </nav>
+          <button class="hamburger-menu">
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 18L20 18"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 12L20 12"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 6L20 6"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <button class="exit">ВОЙТИ</button>
+        </div>
+      </header>
+      <main>
+        <h1>Конвертер валют онлайн</h1>
+        <div class="currency-container">
+          <div class="from">
+            <p class="info">У меня есть</p>
+            <div class="currency-inputs">
+              <div class="buttons">
+                <button class="rub" value="RUB">RUB</button>
+                <button class="usd" value="USD">USD</button>
+                <button class="eur" value="EUR">EUR</button>
+                <button class="gbp" value="GBP">GBP</button>
+              </div>
+              <input class="amount" type="text" />
+              <span>1 RUB = 0.0135 USD</span>
+            </div>
+          </div>
+          <div class="to">
+            <p class="info">Хочу приобрести</p>
+            <div class="currency-inputs">
+              <div class="buttons">
+                <button class="rub" value="RUB">RUB</button>
+                <button class="usd" value="USD">USD</button>
+                <button class="eur" value="EUR">EUR</button>
+                <button class="gbp" value="GBP">GBP</button>
+              </div>
+              <input class="result" type="text" />
+              <span>1 USD = 73.8896 RUB</span>
+            </div>
+          </div>
+          <div class="error"></div>
+        </div>
+      </main>
+      <div class="status"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
